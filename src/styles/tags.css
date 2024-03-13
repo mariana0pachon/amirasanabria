@@ -1,0 +1,12 @@
+html,
+body {
+  font-family: "Aktiv Grotesk", sans-serif;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  padding: 2px 0;
+  min-height: 20px;
+}

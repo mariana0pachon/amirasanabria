@@ -1,34 +1,56 @@
 .about {
-  padding: 3.3vmax 3vw;
+  padding: 3.3vmax 3vmax;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 1.1rem;
 
   .descripcion {
     color: #9c9fb3;
     line-height: 1.7em;
     width: 40vw;
-    font-size: calc((1.1 - 1) * 1.2vw + 1rem); /* TODO: calculo para mobile */
     font-weight: 100;
   }
 
   img {
-    width: 30vw;
+    width: 30vmax;
     object-fit: contain;
   }
 
   :nth-child(2) {
     display: flex;
     flex-direction: column;
-    align-items: space-between;
 
     .contact {
-      padding-top: 15vh;
+      padding-top: 10vmin;
       line-height: 1.7em;
+      font-size: 1.1rem;
 
       a {
         :nth-child(1) {
           font-weight: bold;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about {
+    font-size: 2rem;
+    justify-content: flex-start;
+
+    .descripcion {
+      width: 100%;
+    }
+
+    img {
+      margin-top: 5vmin;
+    }
+
+    :nth-child(2) {
+      .contact {
+        font-size: 2rem;
       }
     }
   }

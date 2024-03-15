@@ -1,5 +1,13 @@
 @font-face {
   font-family: "Aktiv Grotesk";
+  src: url("../assets/fonts/Aktiv Grotesk/OTF/AktivGrotesk-Thin.otf")
+    format("opentype");
+  font-weight: 100;
+  font-style: thin;
+}
+
+@font-face {
+  font-family: "Aktiv Grotesk";
   src: url("../assets/fonts/Aktiv Grotesk/OTF/AktivGrotesk-Light.otf")
     format("opentype");
   font-weight: 300;

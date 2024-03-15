@@ -2,5 +2,7 @@
 @import url('./styles/fonts.css');
 @import url('./styles/functions.css');
 @import url('./styles/tags.css');
+@import url('./styles/layout.css');
 @import url('./styles/header.css');
 @import url('./styles/about.css');
+@import url('./styles/work-menu.css');

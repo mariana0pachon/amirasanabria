@@ -8,14 +8,16 @@ export function App() {
   return (
     <>
       <Header />
-      <BrowserRouter>
-        <Routes path='/' element={<Research />}>
-          <Route index element={<Research />} />
-          <Route path='research' element={<Research />} />
-          <Route path='movies' element={<Movies />} />
-          <Route path='about' element={<About />} />
-        </Routes>
-      </BrowserRouter>
+      <div className='page-content'>
+        <BrowserRouter>
+          <Routes path='/' element={<Research />}>
+            <Route index element={<Research />} />
+            <Route path='research' element={<Research />} />
+            <Route path='movies' element={<Movies />} />
+            <Route path='about' element={<About />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
     </>
   );
 }

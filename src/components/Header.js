@@ -5,10 +5,10 @@ const logo = new URL("../assets/images/logo.png", import.meta.url);
 export function Header() {
   const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false);
 
-  const currentPath = window.location.pathname;
+  const currentBasePath = window.location.pathname.split("/", 2).join("/");
 
   function isActive(routes) {
-    return routes.includes(currentPath) ? "active" : "";
+    return routes.includes(currentBasePath) ? "active" : "";
   }
 
   function toggleMobileMenu() {

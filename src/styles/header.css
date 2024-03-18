@@ -1,6 +1,7 @@
 .header {
   padding: 2.5vmax 3vmax;
   justify-content: space-between;
+  font-weight: 100;
 }
 
 .header.desktop {

@@ -1,6 +1,7 @@
 import { Header } from "./components/Header";
 import { About } from "./pages/About";
 import { Research } from "./pages/Research";
+import { Cueros } from "./pages/research/Cueros";
 import { Movies } from "./pages/Movies";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
@@ -13,6 +14,7 @@ export function App() {
           <Routes path='/' element={<Research />}>
             <Route index element={<Research />} />
             <Route path='research' element={<Research />} />
+            <Route path='research/cueros' element={<Cueros />} />
             <Route path='movies' element={<Movies />} />
             <Route path='about' element={<About />} />
           </Routes>

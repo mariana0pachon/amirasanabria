@@ -1,0 +1,60 @@
+.work {
+  .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -999;
+    width: 100%;
+  }
+
+  .text {
+    padding-top: 90vh;
+    padding-bottom: 10vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    letter-spacing: 0.1px;
+    white-space: pre-wrap;
+
+    .title {
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      color: #9c9fb3;
+      font-weight: 100;
+      margin: 2em 0;
+    }
+
+    .description {
+      line-height: 1.7em;
+      width: 40vw;
+      font-weight: 300;
+      font-size: 1.1em;
+    }
+  }
+
+  .photo {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .work {
+    font-size: 2rem;
+    .cover {
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .text {
+      justify-content: flex-start;
+
+      .description {
+        width: 100%;
+      }
+    }
+  }
+}

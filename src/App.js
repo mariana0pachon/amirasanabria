@@ -2,6 +2,7 @@ import { Header } from "./components/Header";
 import { About } from "./pages/About";
 import { Research } from "./pages/Research";
 import { Cueros } from "./pages/research/Cueros";
+import { VolverAPasarPorElCorazon } from "./pages/research/VolverAPasarPorElCorazon";
 import { Movies } from "./pages/Movies";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
@@ -15,6 +16,10 @@ export function App() {
             <Route index element={<Research />} />
             <Route path='research' element={<Research />} />
             <Route path='research/cueros' element={<Cueros />} />
+            <Route
+              path='research/volver_a_pasar_por_el_corazon'
+              element={<VolverAPasarPorElCorazon />}
+            />
             <Route path='movies' element={<Movies />} />
             <Route path='about' element={<About />} />
           </Routes>

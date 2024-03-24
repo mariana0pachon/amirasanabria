@@ -2,8 +2,8 @@ import { WorkMenu } from "../components/WorkMenu.js";
 
 const covers = {
   cueros: new URL(`../assets/images/research/0_cueros/0.png`, import.meta.url),
-  volver_a_pasar_por_el_corazón: new URL(
-    `../assets/images/research/1_volver_a_pasar_por_el_corazón/0.png`,
+  volver_a_pasar_por_el_corazon: new URL(
+    `../assets/images/research/1_volver_a_pasar_por_el_corazon/0.png`,
     import.meta.url
   ),
   artifact_hunters: new URL(

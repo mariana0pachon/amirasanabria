@@ -1,4 +1,4 @@
-export function Work({ title, subtitle, description, photos }) {
+export function Work({ title, subtitle, description, photos, conclusion }) {
   return (
     <div className='work'>
       <img src={photos[0]} className='cover' />
@@ -12,6 +12,7 @@ export function Work({ title, subtitle, description, photos }) {
       {photos.slice(1).map((photo, idx) => {
         return <img src={photo} key={idx} className='photo' />;
       })}
+      <div className='conclusion'>{conclusion}</div>
     </div>
   );
 }

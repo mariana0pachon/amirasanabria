@@ -56,6 +56,7 @@ export function VolverAPasarPorElCorazon() {
       description={description}
       photos={photos}
       conclusion={conclusion}
+      italic={true}
     />
   );
 }
